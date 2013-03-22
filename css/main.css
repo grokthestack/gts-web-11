@@ -1,0 +1,31 @@
+#slideshow {
+	overflow:hidden;
+}
+
+#slideshow .slides li {
+	opacity:0;
+	height: 0px;
+	transition: 2s ease 0s;
+}
+
+#slideshow .slides li.active {
+	opacity:1;
+	height: auto;
+}
+
+#slideshow.no-more-slides .slides {
+	display:none;
+}
+
+#slideshow.no-more-slides .controls {
+	display:none;
+}
+
+#slideshow .error {
+	display: none;
+}
+
+#slideshow.no-more-slides .error {
+	color: red;
+	display:block;
+}

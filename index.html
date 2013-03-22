@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Awesome JavaScript Stuff</title>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/mootools/1.4.5/mootools-core-full-nocompat-yc.js">
+    </script>
+	<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+
+	<div id="slideshow">
+
+		<div class="controls">
+			<a class="back" href="#back">Previous Image</a>
+			<a class="next" href="#next">Next Image</a>
+			<span class="slide_number">
+				Slide
+				<span class="current">1</span>
+				of
+				<span class="total">4</span>
+			</span>
+		</div>
+
+		<ul class="slides">
+			<li class="slide1 active">
+				<img src="cat1.jpg"/>
+				<div class="caption">This is an awesome cat.</div>
+			</li>
+			<li class="slide2">
+				<img src="cat2.jpg"/>
+				<div class="caption">This cat is not as cool</div>
+			</li>
+			<li class="slide3">
+				<img src="cat3.jpg"/>
+				<div class="caption">Holy crap, a new cat.</div>
+			</li>
+			<li class="slide4">
+				<img src="cat4.jpg"/>
+				<div class="caption">Meow meow, meow.  Meow.</div>
+			</li>
+		</ul>
+
+		<div class="error">
+			No more cats. :(
+		</div>
+
+	</div>
+
+	<div id="tabs">
+
+		<ul class="tabbed_nav">
+			<li class="active"><a href="#tab1">Tab 1</a></li>
+			<li><a href="#tab2">Tab 2</a></li>
+			<li><a href="#tab2">Tab 3</a></li>
+		</ul>
+
+		<div class="tab_content">
+			<div class="tab1 active">First Tab</div>
+			<div class="tab2">Second Tab</div>
+			<div class="tab3">Third Tab</div>
+		</div>
+
+	</div>
+	 <script
+        src="http://cdnjs.cloudflare.com/ajax/libs/eve.js/0.8.1/eve.min.js">
+    </script>
+    <script src="js/slideshow.js"></script>
+</body>
+</html>
