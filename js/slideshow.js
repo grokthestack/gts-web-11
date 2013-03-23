@@ -13,7 +13,7 @@ Eve.scope('#slideshow', function(){
 		var next = current.getNext();
 		//increments the slide counter
 		currentSlide++;
-		//Shows text if no more slides are left, otherwise shows next slide
+		//Shows first slide again if none are left, and resets counter
 		if (!next[0]) {
 			$$('.slides li')[0].addClass('active');
 			currentSlide = 1;
@@ -32,7 +32,7 @@ Eve.scope('#slideshow', function(){
 		var prev = current.getPrevious();
 		//increments the slide counter
 		currentSlide -= 1;
-		//Shows text if no more slides are left, otherwise shows next slide
+		//Shows last slide if no previous slides exist
 		if (!prev[0]) {
 			$$(".slides li")[$$(".slides li").length - 1].addClass('active');
 			currentSlide = $$('.slides li').length;		

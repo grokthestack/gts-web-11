@@ -1,5 +1,10 @@
+body {
+	background-attachment: fixed;
+	background-image: url('http://img1.etsystatic.com/000/0/6184018/il_fullxfull.248637457.jpg');
+}
 #slideshow {
 	overflow:hidden;
+	padding-top: 5px;
 }
 
 #slideshow .slides li {
@@ -11,25 +16,21 @@
 #slideshow .slides li.active {
 	opacity:1;
 	height: auto;
+	list-style-type: none;
 }
 
-#slideshow.no-more-slides .slides {
-	display:none;
+#slideshow .slides li.active img {
+	padding: 20px;
+	background-image: -webkit-linear-gradient(top, #7BFEC6, #23A36C);
+	background-image: -moz-linear-gradient(top, #7BFEC6, #23A36C);
+	border-radius: 5px;
 }
 
-#slideshow.no-more-slides .controls {
-	display:none;
+ul.tabbed_nav, #slideshow div.controls {
+	margin: 0px;
+	padding: 0px;	
+	width: 100%;
 }
-
-#slideshow .error {
-	display: none;
-}
-
-#slideshow.no-more-slides .error {
-	color: red;
-	display:block;
-}
-
 
 #tabs .tabbed_nav li {
 	text-align: center;
@@ -37,14 +38,26 @@
 	display: inline;
 }
 
-#tabs ul.tabbed_nav {
-	color: red;
-	margin: 0px;
-	padding: 0px;	
+ul.tabbed_nav li a, #slideshow div.controls a {
+	text-decoration: none;
+	padding: 5px;
+	color: #E8E1FE;
+	height: 10px;
+	border-radius: 5px;
+	background-image: -webkit-linear-gradient(top, #4E31A3, #2B0992);
+	background-image: -moz-linear-gradient(top, #4E31A3, #2B0992);
+}
+
+ul.tabbed_nav li a:hover, #slideshow div.controls a:hover {
+	background-image: -webkit-linear-gradient(top, #2B0992, #4E31A3);
+	background-image: -moz-linear-gradient(top, #2B0992, #4E31A3);
+
 }
 
 #tabs .tab_content div {
 	display: none;
+	padding-bottom: 16px;
+	margin-bottom: 0px;
 }
 #tabs .tab_content div.active {
 	display: block;
