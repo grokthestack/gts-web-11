@@ -33,10 +33,10 @@ Eve.scope('#tabs', function(){
 		//Remove class 'active' from previously active tab
 		this.find('.active').removeClass('active');		
 		//defines the tabName as the href of the clicked li
-		var tabName = e.target.getElementsByTagName('a')[0].getAttribute('href').replace('/^#/', '');
-		//Add class to the active tab
-		//parent.find('#' + tabName).addClass('active');
+		var tabName = e.target.getElementsByTagName('a')[0].getAttribute('href').replace('#', '');
+		//Add class 'active' to desired tab content
 		for (var i = 0; i < $$(".tabbed_nav li").length; i++) {
+			//Iterates through every .tabbed_nav li and checks if it matches the tabName
 			if ($$(".tabbed_nav li")[i].getElementsByTagName('a')[0].getAttribute('href') === "#" + tabName) {
 				$$(".tabbed_nav li")[i].addClass('active');
 			}
