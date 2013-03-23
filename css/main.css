@@ -29,3 +29,24 @@
 	color: red;
 	display:block;
 }
+
+
+#tabs .tabbed_nav li {
+	text-align: center;
+	list-style-type: none;
+	display: inline;
+}
+
+#tabs ul.tabbed_nav {
+	color: red;
+	margin: 0px;
+	padding: 0px;	
+}
+
+#tabs .tab_content div {
+	display: none;
+}
+#tabs .tab_content div.active {
+	display: block;
+}
+
