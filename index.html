@@ -1,12 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Awesome JavaScript Stuff</title>
+	<title>Cat Slideshow</title>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/mootools/1.4.5/mootools-core-full-nocompat-yc.js">
     </script>
+    <script src="js/slideshow.js" type="text/javascript"></script>
 	<link rel="stylesheet" href="css/main.css" />
 </head>
 <body>
+
+	<div id="tabs">
+
+		<ul class="tabbed_nav">
+			<li class="active"><a href="#tab1">Tab 1</a></li>
+			<li><a href="#tab2">Tab 2</a></li>
+			<li><a href="#tab3">Tab 3</a></li>
+		</ul>
+
+		<div class="tab_content">
+			<div class="tab1 active">
+				<p>Whenever I find myself growing grim about the mouth; whenever it is a damp, drizzly November in my soul; whenever I find myself involuntarily pausing before coffin warehouses, and bringing up the rear of every funeral I meet; and especially whenever my hypos get such an upper hand of me, that it requires a strong moral principle to prevent me from deliberately stepping into the street, and methodically knocking people's hats off -- then, I account it high time to get to sea as soon as I can. This is my substitute for pistol and ball. With a philosophical flourish Cato throws himself upon his sword; I quietly take to the ship. There is nothing surprising in this. If they but knew it, almost all men in their degree, some time or other, cherish very nearly the same feelings towards the ocean with me.</p></div>
+			<div class="tab2">
+				<p>Aye, Starbuck; aye, my hearties all round; it was Moby Dick that dismasted me; Moby Dick that brought me to this dead stump I stand on now. Aye, aye</p></div>
+			<div class="tab3">
+				<p>With the landless gull, that at sunset folds her wings and is rocked to sleep between billows; so at nightfall, the Nantucketer, out of sight of land, furls his sails, and lays him to his rest, while under his very pillow rush herds of walruses and whales.</p></div>
+		</div>
+
+	</div>
 
 	<div id="slideshow">
 
@@ -14,53 +34,34 @@
 			<a class="back" href="#back">Previous Image</a>
 			<a class="next" href="#next">Next Image</a>
 			<span class="slide_number">
-				Slide
-				<span class="current">1</span>
-				of
-				<span class="total">4</span>
+			Slide
+			<span class="current">1</span>
+			of
+			<span class="total">4</span>
 			</span>
 		</div>
 
 		<ul class="slides">
 			<li class="slide1 active">
 				<img src="cat1.jpg"/>
-				<div class="caption">This is an awesome cat.</div>
+				<div class="caption">I know not all that may be coming, but be it what it will, I'll go to it laughing.</div>
 			</li>
 			<li class="slide2">
 				<img src="cat2.jpg"/>
-				<div class="caption">This cat is not as cool</div>
+				<div class="caption">there is no folly of the beast of the earth which is not infinitely outdone by the madness of men</div>
 			</li>
 			<li class="slide3">
 				<img src="cat3.jpg"/>
-				<div class="caption">Holy crap, a new cat.</div>
+				<div class="caption">Think not, is my eleventh commandment; and sleep when you can, is my twelfth.</div>
 			</li>
 			<li class="slide4">
 				<img src="cat4.jpg"/>
-				<div class="caption">Meow meow, meow.  Meow.</div>
+				<div class="caption">It is the easiest thing in the world for a man to look as if he had a great secret in him.</div>
 			</li>
 		</ul>
 
-		<div class="error">
-			No more cats. :(
-		</div>
-
 	</div>
 
-	<div id="tabs">
-
-		<ul class="tabbed_nav">
-			<li class="active"><a href="#tab1">Tab 1</a></li>
-			<li><a href="#tab2">Tab 2</a></li>
-			<li><a href="#tab2">Tab 3</a></li>
-		</ul>
-
-		<div class="tab_content">
-			<div class="tab1 active">First Tab</div>
-			<div class="tab2">Second Tab</div>
-			<div class="tab3">Third Tab</div>
-		</div>
-
-	</div>
 	 <script
         src="http://cdnjs.cloudflare.com/ajax/libs/eve.js/0.8.1/eve.min.js">
     </script>
